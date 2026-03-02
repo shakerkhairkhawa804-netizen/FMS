@@ -1,0 +1,98 @@
+/* =====================
+   GLOBAL RTL
+===================== */
+body.rtl {
+    direction: rtl;
+    text-align: right;
+}
+
+/* =====================
+   SIDEBAR
+===================== */
+body.rtl .sidebar {
+    right: 0;
+    left: auto;
+}
+
+/* که sidebar position: fixed یا absolute وي */
+body.ltr .sidebar {
+    left: 0;
+    right: auto;
+}
+
+/* =====================
+   MAIN CONTENT
+===================== */
+body.rtl .main-content,
+body.rtl .content {
+    margin-right: 250px;
+    margin-left: 0;
+}
+
+body.ltr .main-content,
+body.ltr .content {
+    margin-left: 250px;
+    margin-right: 0;
+}
+
+/* =====================
+   MENU ITEMS
+===================== */
+body.rtl .side-menu ul li a {
+    text-align: right;
+}
+
+body.rtl .side-menu ul li a span {
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+/* =====================
+   PROFILE
+===================== */
+body.rtl .profile {
+    text-align: right;
+}
+
+/* =====================
+   TABLES
+===================== */
+body.rtl table th,
+body.rtl table td {
+    text-align: right;
+}
+/* =====================
+   BODY DIRECTION
+===================== */
+body.ltr { direction: ltr; text-align: left; }
+body.rtl { direction: rtl; text-align: right; }
+
+/* =====================
+   SIDEBAR
+===================== */
+body.ltr .sidebar { left: 0; right: auto; }
+body.rtl .sidebar { right: 0; left: auto; }
+
+/* =====================
+   HEADER
+===================== */
+body.ltr .header { left: var(--sidebar-width); right: 0; }
+body.rtl .header { right: var(--sidebar-width); left: 0; }
+
+/* =====================
+   MAIN CONTENT
+===================== */
+body.ltr .main-content { margin-left: var(--sidebar-width); margin-right: 0; }
+body.rtl .main-content { margin-left: 0; margin-right: var(--sidebar-width); }
+
+/* =====================
+   MENU ITEMS
+===================== */
+body.ltr .side-menu a { justify-content: flex-start; text-align: left; }
+body.rtl .side-menu a { justify-content: flex-end; text-align: right; }
+
+/* =====================
+   TABLES
+===================== */
+body.ltr table th, body.ltr table td { text-align: left; }
+body.rtl table th, body.rtl table td { text-align: right; }
